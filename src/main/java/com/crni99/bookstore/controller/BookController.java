@@ -82,7 +82,7 @@ public class BookController {
 			return "form";
 		}
 		bookService.save(book);
-		redirect.addFlashAttribute("successMessage", "Saved book successfully!");
+		redirect.addFlashAttribute("successMessage", "Saved  book  successfully!");
 		return "redirect:/book";
 	}
 
