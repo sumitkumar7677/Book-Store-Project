@@ -24,7 +24,7 @@ import com.crni99.bookstore.service.BookService;
 
 @Controller
 @RequestMapping("/book")
-public class BookController {
+public class BookController   {
 
 	private final BookService bookService;
 
@@ -87,7 +87,7 @@ public class BookController {
 	}
 
 	@GetMapping("/edit/{id}")
-	public String editBook(@PathVariable("id") Long  id, Model model) {
+	public String editBook(@PathVariable( "id") Long  id, Model model) {
 		model.addAttribute("book", bookService.findBookById(id));
 		return "form";
 	}
