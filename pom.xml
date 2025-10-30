@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.crni99</groupId>
-	<artifactId>bookstore</artifactId>
+	<artifactId>bookstore </artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Book Store</name>
 	<description>Java Spring MVC Hibernate</description>
