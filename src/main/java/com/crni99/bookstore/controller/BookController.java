@@ -40,7 +40,7 @@ public class BookController   {
 	}
 
 	@GetMapping("/search")
-	public String searchBooks(@RequestParam("term") String term, Model model,
+	public String searchBooks(@RequestParam("term")  String term, Model model,
 			@RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size) {
 		if (term.isBlank()) {
 			return "redirect:/book";
