@@ -34,7 +34,7 @@ public class BookController   {
 
 	@GetMapping(value = { "", "/" })
 	public String getAllBooks(Model model, @RequestParam("page") Optional<Integer> page,
-			@RequestParam("size") Optional<Integer> size) {
+			@RequestParam("size") Optional<Integer>  size) {
 
 		return page(null, model, page, size);
 	}
