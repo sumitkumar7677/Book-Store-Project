@@ -24,7 +24,7 @@ import com.crni99.bookstore.service.BookService;
 
 @Controller
 @RequestMapping("/book")
-public class BookController   {
+public class BookController  {
 
 	private final BookService bookService;
 
