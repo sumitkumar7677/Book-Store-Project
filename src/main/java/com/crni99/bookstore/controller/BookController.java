@@ -43,9 +43,9 @@ public class BookController  {
 	public String searchBooks(@RequestParam("term")  String term, Model model,
 			@RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size) {
 		if (term.isBlank()) {
-			return "redirect:/book";
+			return "redirect:/book";     
 		}
-		return page(term, model, page, size);
+		return page(term, model, page,size);
 	}
 
 	private String page(@RequestParam("term") String term, Model model, @RequestParam("page") Optional<Integer> page,
